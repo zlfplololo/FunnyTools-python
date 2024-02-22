@@ -1,6 +1,6 @@
 def ev(num):
 	bol = True
-	for i in range(0,1,num):
+	for i in range(num):
 		bol = not bol
 	return(bol)
 
@@ -10,8 +10,8 @@ def without(what, without):
 	for i in what:
 		RetArr.append(i)
 
-	if without in range(0,1,len(what)):
-		for i in range(0,1,len(RetArr)):
+	if without in range(len(what)):
+		for i in range(len(RetArr)):
 			if RetArr[i] == without:
 				del RetArr[i]
 				i = 0
@@ -28,11 +28,9 @@ def arrobj():
 		def ArrToObj(arr):
 			class retclass:
 				def __init__(self,):
-					for i in range(0,1,len(arr)):
-						name = arr[i][0]
-						val = arr[i][1]
-
-						self.name = val
+					for i in range(len(arr)):
+						setattr(self, arr[i][0], arr[i][1])
+					
 
 					del name
 					del val
@@ -46,7 +44,7 @@ def arrobj():
 			for i in name:
 				value.append(getattr(objname, i))
 
-			for i in range(0,1,len(name)):
+			for i in range(len(name)):
 				ret.append([name[i], value[i]])
 
 			return ret

@@ -62,7 +62,6 @@ def arrobj():
 					value.append([arr[i -1][1]]) 
 					name.append([arr[i -1][0]])
 
-				dick.clear()
 
 				for i in range(len(arr)):
 					dick.update(name[i -1]:value[i -1])

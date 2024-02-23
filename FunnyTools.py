@@ -30,10 +30,6 @@ def arrobj():
 				def __init__(self,):
 					for i in range(len(arr)):
 						setattr(self, arr[i][0], arr[i][1])
-					
-
-					del name
-					del val
 
 			return retclass
 
@@ -52,4 +48,37 @@ def arrobj():
 			
 
 	return arrtoobj	
+
+	def arrdict():
+		class ard:
+			def __init__():
+
+			def ArrToDict(arr):
+				dick = {}
+				value = []
+				name = []
+
+				for i in range(len(arr)):
+					value.append([arr[i -1][1]]) 
+					name.append([arr[i -1][0]])
+
+				dick.clear()
+
+				for i in range(len(arr)):
+					dick.update(name[i -1]:value[i -1])
+
+
+
+			def DictToArr(dict):
+				arr = []
+				value = list(dict.keys())
+				name = list(dict.values())
+
+				for i in range(len(dict)):
+					arr.append([name[i -1], val[i -1]])
+
+				return arr
+
+
+		return ard
 			

@@ -25,23 +25,23 @@ def anagr(fir,sec):
 	tct = [[],[]]
 	ttct = []
 	if len(fir) == len(sec):
-		for i in fir:
+		for i in range(fir):
 			tct[0].append(None)
 			for j in sec:
-				if i == j:
-					tct[0][i -1] = True
+				if fir[i] == j:
+					tct[0][i] = True
 					break 
 			else:
-				tct[0][i -1]
+				tct[0][i] = False
 
-		for i in sec:
+		for i in len(sec):
 			tct[1].append(None)
 			for j in fir:
-				if i == j:
-					tct[1][i -1] = True
+				if sec[i] == j:
+					tct[1][i] = True
 					break 
 			else:
-				tct[1][i -1]
+				tct[1][i] = False
 
 		ttct.append(None)
 		ttct.append(None)
@@ -85,7 +85,7 @@ def objdict():
 				value.append(getattr(objname, i))
 
 			for i in range(len(value)):
-				ret.update(name[i -1]:value[i -1])
+				ret.update(name[i]:value[i])
 
 		def DictToObj(dick):
 			value = []
@@ -97,7 +97,7 @@ def objdict():
 			class retclass:
 				def __init__(self):
 					for i in range(len(name)):
-						setattr(self, name[i -1], value[i -1])
+						setattr(self, name[i], value[i])
 
 
 			return retclass
@@ -112,7 +112,7 @@ def arrobj():
 			class retclass:
 				def __init__(self,):
 					for i in range(len(arr)):
-						setattr(self, arr[i -1][0], arr[i -1][1])
+						setattr(self, arr[i][0], arr[i][1])
 
 			return retclass
 
@@ -142,12 +142,12 @@ def arrobj():
 				name = []
 
 				for i in range(len(arr)):
-					value.append([arr[i -1][1]]) 
-					name.append([arr[i -1][0]])
+					value.append([arr[i][1]]) 
+					name.append([arr[i][0]])
 
 
 				for i in range(len(arr)):
-					dick.update(name[i -1]:value[i -1])
+					dick.update(name[i]:value[i])
 
 
 
@@ -157,7 +157,7 @@ def arrobj():
 				name = list(dict.values())
 
 				for i in range(len(dict)):
-					arr.append([name[i -1], val[i -1]])
+					arr.append([name[i], val[i]])
 
 				return arr
 

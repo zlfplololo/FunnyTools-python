@@ -21,6 +21,89 @@ def without(what, without):
 
 	return(Ret)
 
+def anagr(fir,sec):
+	tct = [[],[]]
+	ttct = []
+	if len(fir) == len(sec):
+		for i in fir:
+			tct[0].append(None)
+			for j in sec:
+				if i == j:
+					tct[0][i -1] = True
+					break 
+			else:
+				tct[0][i -1]
+
+		for i in sec:
+			tct[1].append(None)
+			for j in fir:
+				if i == j:
+					tct[1][i -1] = True
+					break 
+			else:
+				tct[1][i -1]
+
+		ttct.append(None)
+		ttct.append(None)
+
+		for i in tct[0]:
+			if i == True:
+				ttct[0] = True
+				continue
+
+			else:
+				ttct[0] = False
+				break
+
+		for i in tct[1]:
+			if i == True:
+				ttct[1] = True
+				continue
+
+			else:
+				ttct[1] = False
+				break
+
+		if ttct[0] & ttct[1]:
+			return True
+		else:
+			return False
+
+	else:
+		return False
+
+def objdict():
+	class OBDI:
+		def __init__():
+
+		def ObjToDict(objname):
+			ret = {}
+			value = []
+			name = list(objname.__dict__.keys())
+
+			for i in name:
+				value.append(getattr(objname, i))
+
+			for i in range(len(value)):
+				ret.update(name[i -1]:value[i -1])
+
+		def DictToObj(dick):
+			value = []
+			name = list(dick.keys())
+
+			for i in value:
+				value.append(dick.get(i))
+
+			class retclass:
+				def __init__(self):
+					for i in range(len(name)):
+						setattr(self, name[i -1], value[i -1])
+
+
+			return retclass
+
+	return OBDI
+
 def arrobj():
 	class arrtoobj:
 		def __init__(): 
@@ -29,7 +112,7 @@ def arrobj():
 			class retclass:
 				def __init__(self,):
 					for i in range(len(arr)):
-						setattr(self, arr[i][0], arr[i][1])
+						setattr(self, arr[i -1][0], arr[i -1][1])
 
 			return retclass
 

@@ -1,10 +1,12 @@
 def ev(num):
+	#true
 	bol = True
 	for i in range(num):
 		bol = not bol
 	return(bol)
 
 def numeric(num):
+	#true
 	try:
 		int(num)
 		return True
@@ -12,6 +14,7 @@ def numeric(num):
 		return False
 
 def without(what, without):
+	#true
 	RetArr = []
 	Ret = ""
 	for i in what:
@@ -29,10 +32,11 @@ def without(what, without):
 	return(Ret)
 
 def anagr(fir,sec):
+	#true
 	tct = [[],[]]
 	ttct = []
 	if len(fir) == len(sec):
-		for i in range(fir):
+		for i in range(len(fir)):
 			tct[0].append(None)
 			for j in sec:
 				if fir[i] == j:
@@ -41,7 +45,7 @@ def anagr(fir,sec):
 			else:
 				tct[0][i] = False
 
-		for i in len(sec):
+		for i in range(len(sec)):
 			tct[1].append(None)
 			for j in fir:
 				if sec[i] == j:
@@ -79,95 +83,22 @@ def anagr(fir,sec):
 	else:
 		return False
 
-def objdict():
-	class OBDI:
-		def __init__():
+def arrdict():
+	#true
+    class Ard:
+        @staticmethod
+        def ArrToDict(arr):
+            dick = {}
+            for item in arr:
+                dick[item[0]] = item[1]
+            return dick
 
-		def ObjToDict(objname):
-			ret = {}
-			value = []
-			name = list(objname.__dict__.keys())
+        @staticmethod
+        def DictToArr(dick):
+            arr = []
+            for key, value in dick.items():
+                arr.append([key, value])
+            return arr
 
-			for i in name:
-				value.append(getattr(objname, i))
-
-			for i in range(len(value)):
-				ret.update(name[i]:value[i])
-
-		def DictToObj(dick):
-			value = []
-			name = list(dick.keys())
-
-			for i in value:
-				value.append(dick.get(i))
-
-			class retclass:
-				def __init__(self):
-					for i in range(len(name)):
-						setattr(self, name[i], value[i])
-
-
-			return retclass
-
-	return OBDI
-
-def arrobj():
-	class arrtoobj:
-		def __init__(): 
-
-		def ArrToObj(arr):
-			class retclass:
-				def __init__(self,):
-					for i in range(len(arr)):
-						setattr(self, arr[i][0], arr[i][1])
-
-			return retclass
-
-		def ObjToArr(objname):
-			ret = []
-			name = list(objname.__dict__.keys())
-			value = []
-			for i in name:
-				value.append(getattr(objname, i))
-
-			for i in range(len(name)):
-				ret.append([name[i], value[i]])
-
-			return ret
-
-			
-
-	return arrtoobj	
-
-	def arrdict():
-		class ard:
-			def __init__():
-
-			def ArrToDict(arr):
-				dick = {}
-				value = []
-				name = []
-
-				for i in range(len(arr)):
-					value.append([arr[i][1]]) 
-					name.append([arr[i][0]])
-
-
-				for i in range(len(arr)):
-					dick.update(name[i]:value[i])
-
-
-
-			def DictToArr(dict):
-				arr = []
-				value = list(dict.keys())
-				name = list(dict.values())
-
-				for i in range(len(dict)):
-					arr.append([name[i], val[i]])
-
-				return arr
-
-
-		return ard
+    return Ard
 			

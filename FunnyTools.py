@@ -4,9 +4,16 @@ def ev(num):
 		bol = not bol
 	return(bol)
 
+def numeric(num):
+	try:
+		int(num)
+		return True
+	except ValueError:
+		return False
+
 def without(what, without):
 	RetArr = []
-	Ret = 
+	Ret = ""
 	for i in what:
 		RetArr.append(i)
 

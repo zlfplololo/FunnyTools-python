@@ -1,4 +1,4 @@
-FunnyTools ver 4.3
+FunnyTools ver 4.4
 added "ev()" chek even is a num, "without()" return string without first argumend; in 1.0
 added "arrobj()" with methods "ArrToObj()" & "ObjToArr()" who convert arr to object(or conversely); in 2.0
 bugs fixed; in 2.1
@@ -12,3 +12,5 @@ bugs fixed; in 4.2
 added "numeric()" who checks if this string is number; in 4.2
 many bugs fixed; in 4.3
 deleted "arrobj()" & "objdict()" for technical problems; in 4.3
+added "revernum()" who reverse num from i to custom value; in 4.4
+added "palindr()" checks if a string is a palindrome; in 4.4

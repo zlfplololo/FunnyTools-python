@@ -85,20 +85,31 @@ def anagr(fir,sec):
 
 def arrdict():
 	#true
-    class Ard:
-        @staticmethod
-        def ArrToDict(arr):
-            dick = {}
-            for item in arr:
-                dick[item[0]] = item[1]
-            return dick
+	class Ard:
+		@staticmethod
+		def ArrToDict(arr):
+			dick = {}
+			for item in arr:
+				dick[item[0]] = item[1]
+			return dick
 
-        @staticmethod
-        def DictToArr(dick):
-            arr = []
-            for key, value in dick.items():
-                arr.append([key, value])
-            return arr
+		@staticmethod
+		def DictToArr(dick):
+			arr = []
+			for key, value in dick.items():
+				arr.append([key, value])
+			return arr
 
-    return Ard
-			
+	return Ard
+
+def revernum(what,to):
+	#true
+	return to - what
+
+def palindr(that):
+	rev = ""
+
+	for i in range(len(that)):
+		rev = that[len(that) - i -1]
+
+	return that == rev

@@ -107,9 +107,24 @@ def revernum(what,to):
 	return to - what
 
 def palindr(that):
+	#true
 	rev = ""
 
 	for i in range(len(that)):
 		rev = that[len(that) - i -1]
 
 	return that == rev
+
+def nonum(number):
+	#true
+	def ev(num):
+		bol = True
+		for i in range(num):
+			bol = not bol
+		return(bol)
+
+	if ev(number):
+		return number -1
+	else:
+		return number +1
+

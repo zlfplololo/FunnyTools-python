@@ -1,4 +1,4 @@
-FunnyTools ver 4.5
+FunnyTools ver 4.6
 added "ev()" chek even is a num, "without()" return string without first argumend; in 1.0
 added "arrobj()" with methods "ArrToObj()" & "ObjToArr()" who convert arr to object(or conversely); in 2.0
 bugs fixed; in 2.1
@@ -15,3 +15,6 @@ deleted "arrobj()" & "objdict()" for technical problems; in 4.3
 added "revernum()" who reverse num from i to custom value; in 4.4
 added "palindr()" checks if a string is a palindrome; in 4.4
 added "nonum()" who if is even return argument -1 else +1; in 4.5 
+added class BinaryTree was added width index indecators and methods resetparents(name),searchallchilds(name),addparent(name,parentname), deleteparent(name,parent); in 4.6
+added LOXRIY that can be hepful in for in for, i dont know how actualy to describe it, go see code i allow it; in 4.6  
+added VFP that checks if number have floating point; in 4.6 

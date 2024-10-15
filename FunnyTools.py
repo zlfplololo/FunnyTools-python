@@ -1,6 +1,8 @@
+#!/usr/bin/python3
+
 class arrdict():
 	#true
-	def ArrToDict(arr):
+	def ArrToDict(self, arr):
 		dick = {}
 		for item in arr:
 			dick[item[0]] = item[1]
@@ -13,7 +15,7 @@ class arrdict():
 		return arr
 
 class BinaryTree:
-    #true
+	#true
 	def __init__(self):
 		#name:[value, [parents]]
 		self.value = {}
@@ -50,6 +52,77 @@ class BinaryTree:
 				ret.append(i)
 		return ret
 
+class table():
+	#true
+	def __init__(self,x,y):
+		self.x = x
+		self.y = y
+		self.value = []
+		self.update(x,y)
+
+	def __getitem__(self,key):
+		return self.value[key]
+
+	def __setitem__(self,key,value):
+		self.value[key] = value
+	
+	def echo(self, ToPrint):
+		print(ToPrint, end="")
+	
+	def MatPrint(self, Matrics):
+		for i in range(len(Matrics)):
+			for j in range(len(Matrics[i])):
+				self.echo([Matrics[i][j]])
+			print()
+	
+	def __str__(self):
+		self.MatPrint(NAT.value)
+		return ''
+				
+
+	def update(self,x,y):
+		for i in range(x):
+			self.value.append([])
+			for j in range(y):
+				self.value[i].append(0)
+				
+	def increaseX(self,num):
+		for i in range(num):
+			self.x+=1
+			self.value.append([])
+			for j in range(self.y):
+					self.value[self.x-1].append(0)
+
+	def decreaseX(self, num):
+		for i in range(num):
+			self.value.pop()
+			self.x-=1
+
+	def increaseY(self, num):
+		for i in range(num):
+			for j in range(self.x):
+				self.value[j].append(0)
+				
+	def decreaseY(self,num):
+		for i in range(num):
+			self.y-=1
+			for j in range(self.x):
+				self.value[j].pop()
+
+def echo(ToPrint):
+	#true
+	print(ToPrint, end="")
+	
+def MatPrint(Matrics):
+	#true
+	def echo(ToPrint):
+		print(ToPrint, end="")
+	
+	for i in range(len(Matrics)):
+		for j in range(len(Matrics[i])):
+			echo([Matrics[i][j]])
+		print()
+		
 #true
 ev = lambda x: x%2 - x%2%1 <= 0
 
@@ -137,7 +210,7 @@ def anagr(fir,sec):
 revernum = lambda x,y:y - x
 
 def palindr(that):
-	#true
+        #true
 	rev = ""
 
 	for i in range(len(that)):
@@ -147,7 +220,7 @@ def palindr(that):
 
 def nonum(number):
 	#true
-	ev = lambda x: X%2 - x%2%1 <=0
+	ev = lambda x: x%2 - x%2%1 <=0
 	if ev(number):
 		return number -1
 	else:

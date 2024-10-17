@@ -76,7 +76,7 @@ class table():
 			print()
 	
 	def __str__(self):
-		self.MatPrint(NAT.value)
+		self.MatPrint(self.value)
 		return ''
 				
 

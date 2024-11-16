@@ -100,6 +100,7 @@ class table():
 
 	def increaseY(self, num):
 		for i in range(num):
+			self.y+=1
 			for j in range(self.x):
 				self.value[j].append(0)
 				

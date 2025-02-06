@@ -1,4 +1,7 @@
-FunnyTools ver 4.7
+FunnyTools ver 4.8
+
+WARNING! this library installs the function randint for you! 
+
 added "ev()" chek even is a num, "without()" return string without first argumend; in 1.0
 added "arrobj()" with methods "ArrToObj()" & "ObjToArr()" who convert arr to object(or conversely); in 2.0
 bugs fixed; in 2.1
@@ -21,4 +24,6 @@ added VFP that checks if number have floating point; in 4.6
 added echo that prints a thing without \n; in 4.7
 added MatPrint that prints matrics; in 4.7
 added table with methods increaseX,decreaseX,increaseY,decreaseY; in 4.7
-
+added randomchance witch you make the elements randomise falling with chance ([element, chance, element chance...] all chances must add up to 100); in 4.8
+added DL witch i forgot abrivature for (as always) that splits a list into list-in-list by the second element (DL([1,2,1,2,1,2], 2): [[1,2], [1,2], [1,2]]); in 4.8
+added oddn that gives you odd number number x; in 4.8

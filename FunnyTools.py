@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+from random import randint
+
 class arrdict():
 	#true
 	def ArrToDict(self, arr):
@@ -226,6 +228,33 @@ def nonum(number):
 		return number -1
 	else:
 		return number +1
+
+#true
+def randomchance(a):
+	DL = lambda liste, by: [liste[i:i+by] for i in range(0, len(liste), by)]
+	
+	if len(a)%2>0:
+		raise ValueError('number of elements must be even')
+	
+	b = DL(a, 2)
+	loo = sum(i[1] for i in b)
+		
+	if loo != 100:
+		raise ValueError('chances must add up to 100')
+	
+	r = randint(1, 100)
+	cumulative = 0
+	
+	for item, chance in b:
+		cumulative += chance
+		if r <= cumulative:
+			return item
+
+#true
+oddn = lambda x: abs(1-x)+x
+
+#true
+DL = lambda liste, by: [liste[i:i+by] for i in range(0, len(liste), by)]
 
 #true
 VFP = lambda x: x != x - x%1

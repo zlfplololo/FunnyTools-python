@@ -33,7 +33,7 @@ class BinaryTree:
 		del self.value[index]
 
 	def __str__(self):
-		 return str(self.value)
+		return str(self.value)
 
 	def resetparents(self,index):
 		self.value[index][1] = []

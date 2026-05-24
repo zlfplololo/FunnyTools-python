@@ -1,7 +1,10 @@
 Shimmer License (by zlfp)
 
 This product (including source code, executables, libraries, games, programming languages, and any derivative works) is free. You may not sell it or charge for it in any way, including "pay-what-you-want" or hidden fees.
-When publishing, using, or distributing this product (or a modified version of it), you must clearly and conspicuously credit the original author in a prominent place (e.g., in the credits, "About" screen, help, documentation, or README).
+When publishing, using, or distributing this product (or a modified version of it), you must clearly and conspicuously credit the original author in a prominent place (e.g., in the credits, "About" screen, help, documentation, or README) where the user of this product will see it.
+
+Hoever, this product may be included in, bundled with, or utilized as a dependency for any commercial or revenue-generating software, provided it functions strictly as a library, interpreter, or any other programming/system-level utility (latter applicable only in developer cases) and provided the user does not interact with this product on the frontend.
+
 You may not claim credit or register this product as your own. All rights belong to the original creator.
 You may modify and distribute this product, but only as long as this license and all its terms are preserved.
 This license must accompany all copies and derivative works of the product.
@@ -10,12 +13,9 @@ THIS PRODUCT IS GIVEN AS IS, AND THE ORIGINAL CREATOR DOES NOT TAKE RESPONCIBILI
 
 Some corrections (you may later ask the licence creator for any corrections):
 
-Partial pieces of the code are free to use, unless using a big part of the code or using it as an extension, then you must credit the original creator as a Code/Library/General other software contributor in Contributor in the same area and as conspicuously as the original creator when contributing a modified version. (For dummies: no, you do not need to inherit the licence in this case)
+Partial pieces of the code are free to use, unless using a highly significant part of the code ( for example, a three line function that calculates all the physics in the code is more significant then a 500 line class that is just a box) or using it as an extension (meaining, to use it as a part of the 'front-end' and not 'back-end'), then you must credit the original creator as a Code/Library/General other software contributor in Contributor in the same area and as conspicuously as the original creator when contributing a modified version. (For dummies: no, you do not need to inherit the licence in this case)
 
-When contributing a modified version of this product you are considered a contributor and shall be mentioned as a contributor in as such of a prominent place as the original creator, in all products deriving from your modification also.
+When contributing a modified version of this product you are considered a contributor and shall be mentioned as a contributor in as such of a prominent place as the original creator, in all products deriving from your modification.
 
 when sharing any inspired artwork/videowork/musicwork, even though it is considered a derivative work, unless depicting a specific piece a specific piece of art/video/music or a clearly modified and recognisable piece (for example, changing the color palette, or a few note sounds) version from the software, the creator (of the artwork) owns all the rights to the artwork.
 Exceptions include: any piece of work, that does not come originally from this product (royalty free or just allowed to use), in this situation, you must use the licence/terms of use of the work.
-
-
-
